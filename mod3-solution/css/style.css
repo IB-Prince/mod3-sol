@@ -18,12 +18,15 @@ body{
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
   border: 1px solid #000;
 }
-#navlist{
-  margin-top: 10px;
+.navbar-default .navbar-collapse{
+  border-color: #000;
 }
 #navlist a{
   color: #000;
   text-align: center;
+}
+#navlist li:nth-child(n+2){
+  border-top: 2px solid #000;
 }
 #navlist a:hover{
   background-color: #000;
@@ -40,10 +43,17 @@ h3{
   margin-top: 0;
 }
 
+
 .row div div{
   background-color: #aaa;
 }
 .mg-15{
   padding: 15px;
-  margin: 10px;
+  margin: 8px;
+}
+
+@media (max-width: 767px){
+  #collapsable-nav{
+    background-color: #fff;
+  }
 }
